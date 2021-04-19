@@ -1,14 +1,16 @@
 #include<stdio.h>
+#include "Untitled1.c"
+struct student{
+        int userID;
+        char Name[25];
+        int birthday; //in day,month,year
+        int  score;
+};
+
 int main(void){
-int size;
-printf("\nEnter the size of the array: ");
-scanf("%d",&size);
-int *A;
-A=(int*)malloc(size*sizeof(int));
-printf("\nEnter the values of the array: ");
-for(int i=0;i<size;i++)
-    scanf("%d",&A[i]);
-printf("\nThe values of the array are: ");
-for(int i=0;i<size;i++)
-    printf("%d\t",A[i]);
+printf("Enter the number of students\n");
+int N;
+scanf("%d",&N);
+struct student s[N];
+
 }
